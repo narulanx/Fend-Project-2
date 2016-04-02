@@ -1,0 +1,386 @@
+body, div, ul, li, p, h1, h2, h3, h4, h5, h6 {
+  padding:0;
+  margin:0;
+  font-family: "Roboto", sans-serif;
+}
+
+.clear-fix {
+  overflow: auto;
+}
+
+.education-entry, .work-entry, .project-entry {
+  padding: 0 5%;
+}
+
+.work-entry div#name, .project-entry div#name, .education-entry div#name {
+  color: #4D60C9;
+  padding-top: 20px;
+}
+
+.education-entry a {
+  color: #4D60C9;
+}
+
+h1 {
+  font-size: 40px;
+  color: #000;
+  line-height: 48px;
+  text-align: end;
+  padding-top: 40px;
+}
+
+h2 {
+  font-size: 30px;
+  color: #999;
+  line-height: 29px;
+  padding:10px 5%;
+  text-align: center;
+}
+
+h3 {
+  font-style: italic;
+  font-size: 20px;
+  color: #000;
+  line-height: 22px;
+  padding:10px 10px 10px 0;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 14px;
+  color: #4a4a4a;
+  line-height: 17px;
+  padding:10px 5%;
+}
+
+h5 {
+  padding:10px 5%;
+}
+
+.date-text {
+  font-style: italic;
+  font-size: 14px;
+  color: #999;
+  line-height: 16px;
+  float: left;
+  width: auto;
+}
+
+.location-text {
+  font-style: italic;
+  font-size: 14px;
+  color: #999;
+  line-height: 16px;
+  float: right;
+  width: 10%;
+}
+
+.client-text {
+  font-size: 14px;
+  color: #333;
+}
+
+
+p {
+  font-size: 14px;
+  color: #333;
+  line-height: 21px;
+}
+
+a {
+  color: #1199c3;
+  text-decoration: none;
+  margin-top: 10px;
+  display: block;
+}
+
+.welcome-message {
+  font-style: italic;
+  font-size: 18px;
+  color: #333;
+  line-height: 28px;
+  padding: 10px 0;
+}
+
+#skills-h3 {
+  color: #000;
+}
+
+.orange {
+  background-color: #f5ae23;
+}
+
+.orange-text {
+  color: #000;
+  font-weight: 600;
+}
+
+.white-text {
+  font-weight: bold;
+  color: #4D60C9;
+}
+
+.gray {
+  background-color: #FBFBFB;
+  padding-bottom: 10px;
+  clear:both;
+}
+
+.dark-gray {
+  background-color: #4a4a4a;
+}
+
+/* TODO: Replace with image later */
+#header {
+  background-color: #BEE6BB;
+}
+
+.role {
+  text-align: end;
+  padding-bottom: 30px;
+}
+
+#workExperience h2, #projects h2, #education h2, #mapDiv h2, #lets-connect h2 {
+  padding-top: 5.5%;
+}
+
+#education h3 {
+  padding-left: 5%;
+}
+
+#projects {
+  padding-bottom: 20px;
+}
+
+.flex-box {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.work-flex {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skills{
+  flex-direction: column;
+  padding: 0;
+}
+
+.skills span {
+  padding: 0;
+  line-height: 2;
+}
+
+.center-content {
+  padding: 2.5% 5%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.biopic {
+  float: left;
+  padding: 10px;
+  width: 170px;
+  display: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+img {
+  padding: 10px;
+}
+
+span {
+  padding: 5px;
+}
+
+#lets-connect {
+  text-align: center;
+}
+
+/* Media queries to handle various device widths */
+
+@media only screen and (min-width: 1200px) {
+  #main {
+    width: 1200px;
+  }
+}
+
+@media only screen and (max-width: 1201px) {
+  #main {
+    width: 1024px;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  #main {
+    width: 900px;
+  }
+  #lets-connect {
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width:901px) {
+  #main {
+    width: 750px;
+  }
+  .biopic {
+    width: 175px;
+  }
+}
+
+@media only screen and (max-width: 751px) {
+  #main {
+    width: 500px;
+  }
+  #lets-connect {
+    margin-top: 10%;
+  }
+  .biopic {
+    width: 150px;
+  }
+  .welcome-message {
+    display: none;
+  }
+  .skill-chart {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  #skills-h3,
+  .biopic {
+    display: block;
+  }
+  .skill-chart{
+    width: 70%;
+    display: flex;
+  }
+}
+
+#map {
+  display: block;
+  height: 100%;
+  margin: 0 5%;
+}
+
+#mapDiv {
+  height: 400px;
+  width: 100%;
+  padding-bottom: 5%;
+}
+
+.flex-item {
+	display: flex;
+}
+
+#main {
+  padding: 0 15px;
+  margin: auto;
+}
+
+#skills li{
+  display: none;
+}
+
+.more-less-link {
+  font-style: italic;
+  color: #333;
+}
+
+a.more-less-link:hover {
+  color: #333;
+}
+
+.skill-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.skill-list{
+  width: 30%;
+}
+
+.chart {
+  width: 33%;
+  position: relative;
+}
+
+.chart strong {
+  position: absolute;
+  text-align: center;
+  font-size: 30px;
+  top: 30px;
+  left: 24px;
+}
+
+.chart span {
+  font-size: 20px;
+  margin-right: 95px;
+}
+
+#html5 span {
+  padding-left: 19px;
+}
+
+#css span {
+  padding-left: 30px;
+}
+
+.padding-top10 {
+  padding-top: 10px;
+}
+
+#footerContacts {
+  display: inline-flex;
+}
+
+#footerContacts a {
+  padding: 20px;
+  color: #000;
+}
+
+.nav .active {
+  background-color: #BEE6BB !important;
+}
+
+/*nav bar */
+.navbar-default {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0;
+  width: 100%;
+  position: fixed;
+}
+
+.navbar-collapse {
+  float: right;
+}
+
+.navbar-header span {
+  padding: 1px;
+}
+
+#navbar {
+  height: 62px;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #000 !important;
+}
